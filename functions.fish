@@ -19,3 +19,7 @@ function textsn
   textsp (getName $argv)
 end
 
+function isolate_column
+  eval "$argv[2..-1]" | ./pluck.sh $argv[1]
+end
+
