@@ -12,3 +12,10 @@ function textsp
   texts (./person_search.sh $argv)
 end
 
+function getName
+  cat ~/.contacts.txt | grep $argv | awk '{print $2}'
+end
+function textsn
+  textsp (getName $argv)
+end
+
