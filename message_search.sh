@@ -7,5 +7,5 @@ FROM message m, handle h
 WHERE 
   h.rowid = m.handle_id AND 
   m.text LIKE '%$1%' 
-ORDER BY m.rowid ASC;"
+ORDER BY m.rowid ASC"
 

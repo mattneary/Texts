@@ -8,5 +8,5 @@ echo "SELECT
 WHERE 
   h.rowid = m.handle_id AND 
   h.id='$1' 
-ORDER BY m.rowid ASC;"
+ORDER BY m.rowid ASC"
 
